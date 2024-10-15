@@ -1,0 +1,56 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package srudeep;
+
+/**
+ *
+ * @author student
+ */
+import java.util.Scanner;
+public class Week2b {
+    public static void main(String args[])
+    {
+    Scanner s=new Scanner(System.in);
+    System.out.println("enter no of strings");
+    int n=s.nextInt();
+    s.nextLine();
+    System.out.println("enter strings");
+    String a[]=new String[n];
+    String temp;
+    for(int i=0;i<n;i++)
+    {
+        a[i]=s.nextLine();
+    }
+    for(int j=0;j<n;j++)
+    {
+        for(int k=0;k<(n-1);k++)
+        {
+            if(a[k].compareTo(a[k+1])>0)
+            {
+                temp=a[k];
+                a[k]=a[k+1];
+                a[k+1]=temp;
+                
+        }
+            
+        }
+    }
+    System.out.println("after sorting strings");
+    for(int i=0;i<n;i++)
+    {
+        System.out.println(a[i]);
+    }
+    }
+}
+
+        
+    
+        
+    
+ 
+    
+    
+

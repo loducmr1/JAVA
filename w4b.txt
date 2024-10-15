@@ -1,0 +1,46 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package srudeep;
+
+/**
+ *
+ * @author student
+ */
+abstract class Shap
+{
+    int h=30,w=20,r=10;
+    abstract void printArea();
+    
+}
+class R extends Shap 
+{
+    void printArea(){
+        System.out.println(h*w);
+    }
+}
+class T extends Shap
+{
+    void printArea()
+    {
+System.out.println(0.5*w*h);
+    }
+}
+class C extends Shap
+{
+    void printArea(){
+System.out.println(3.14*r*r);
+    }
+}
+public class Week4b {
+  public static void main(String[]args){
+      R a=new R();
+      T b=new T();
+      C d=new C();
+      d.printArea();
+      b.printArea();
+      a.printArea();
+  }    
+}

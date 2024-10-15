@@ -1,0 +1,45 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package srudeep;
+
+/**
+ *
+ * @author student
+ */
+interface Csm
+{
+    public void student();
+}
+interface Cse
+{
+    public void student();
+    public void faculty();
+}
+interface Csd
+{
+    public void HOD();
+    public void faculty();
+}
+public class Week3b implements Csm,Cse,Csd{
+    public void student()
+    {
+        System.out.println("CMRIT STUDENT");
+    }
+    public void faculty()
+    {
+        System.out.println("CMRIT FACULTY");
+    }
+    public void HOD()
+    {
+        System.out.println("CSM HOD");
+    }
+    public static void main(String[] args) {
+        Week3b a=new Week3b();
+        a.HOD();
+        a.faculty();
+        a.student();
+    }
+}

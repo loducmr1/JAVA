@@ -1,0 +1,34 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package srudeep;
+
+/**
+ *
+ * @author student
+ */
+public class Week3a {
+        void add(int a,int b)
+    {
+        System.out.println(a+b);
+    }
+    void add(int a,int b,int c)
+    {
+        System.out.println(a+b+c);
+    }
+    void add(String a,String b)
+    {
+        System.out.println(a+b);
+    }
+    public static void main(String[] args) {
+        Week3a x=new Week3a();
+        x.add("hai","hello");
+        x.add(10,20,30);
+        x.add(10,20);
+    }
+    
+}
+
+

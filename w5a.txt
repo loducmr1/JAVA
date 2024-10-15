@@ -1,0 +1,38 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package srudeep;
+
+/**
+ *
+ * @author student
+ */
+import java.util.Scanner;
+public class Week5a {
+    public  static void main(String args[]){
+        int a,b,i;
+        Scanner x=new Scanner(System.in);
+        System.out.println("Enter a value");
+        a=x.nextInt();
+        System.out.println("Enter b value");
+        b=x.nextInt();
+        System.out.println("Enter index value");
+        i=x.nextInt();
+        int c[]=new int[5];
+        try{
+            c[i]=a/b;
+        }
+        catch (ArrayIndexOutOfBoundsException ai){
+            System.out.println("ai");
+        }
+        catch(ArithmeticException ae){
+                System.out.println(ae);
+                
+                }
+                finally{
+                        System.out.println("Hai");
+                }
+}
+}

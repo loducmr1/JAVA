@@ -1,0 +1,26 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package srudeep;
+
+/**
+ *
+ * @author student
+ */
+public class Week5b {
+    public static void vote(int age) {
+        if(age<18){
+        throw new ArithmeticException("Person is not eligible to vote");
+    }
+    else{
+            System.out.println("Person is eligible to vote");
+}
+}
+public static void main(String args[]){
+    vote(13);
+    System.out.println("rest of the code....");
+}
+
+}
